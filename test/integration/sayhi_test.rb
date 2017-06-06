@@ -7,5 +7,4 @@ class SayhiTest < ActionDispatch::IntegrationTest
     get root_url
     assert_select "a[href=?]", users_path, text:'Hi there'
   end
-
 end
